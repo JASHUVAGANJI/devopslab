@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            display: flex;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .left-side, .right-side {
+            flex: 1;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .left-side {
+            margin-right: 10px;
+        }
+
+        .right-side {
+            margin-left: 10px;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        .divider {
+            width: 2px;
+            background-color: #ccc;
+        }
+
+        .right-side form {
+            display: flex;
+            flex-direction: column;
+            max-width: 400px;
+            margin: auto;
+        }
+
+        .right-side input, .right-side select, .right-side button {
+            margin-bottom: 15px;
+            padding: 10px;
+            font-size: 16px;
+        }
+
+        .right-side button {
+            cursor: pointer;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+        }
+
+        .right-side button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <div class="left-side">
+        <img src="devops-1.jpg" alt="sasi logo" style="max-width: 100%; height: auto;" />
+        <h1>DEPARTMENT OF COMPUTER SCIENCE & ENGINEERING</h1>
+        <h2>VISION</h2>
+        <p>To escalate the department by creativeness in technology for emerging and global needs through Training, Research & Development.</p>
+        <h2>MISSION</h2>
+        <p>To impart training to students in emerging technologies to product development</p>
+        <ol>
+            <li>To promote research & innovation skills through professional guidance</li>
+            <li>To originate social technocrats who perceive societal problems as being solvable by applying technology.</li>
+            <li>To produce professionals with strong values and zeal to serve society.</li>
+            <li>To create leaders with strong communication skills who can drive, inspire, and guide the groups they work with.</li>
+        </ol>
+    </div>
+
+    <div class="divider"></div>
+
+    <div class="right-side">
+        <h2>Registration Form</h2>
+        <form>
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name" placeholder="Enter Full name" required>
+
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" placeholder="Enter your password" required>
+
+            <label for="ConfirmPassword">ConfirmPassword</label>
+            <input type="password" name="confirmpassword" id="" placeholder="Confirm Your Password" required>
+
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+
+            <label for="course">Course</label>
+            <select id="course" name="course" required>
+                <option value="btech">B.Tech</option>
+                <option value="mtech">M.Tech</option>
+                <option value="msc">M.Sc</option>
+            </select>
+
+            <label for="">Date of Birth</label>
+            <input type="date" name="dateofbirth" id="">
+
+            <!-- <button type="submit" href = "successpage.html">Register</button> -->
+            <!-- <button onclick="window.location.href='/successpage.html';">Register</button> -->
+            <a href="successpage.html">
+                <button >Register</button>
+            </a>
+
+        </form>
+    </div>
+</body>
+</html>
