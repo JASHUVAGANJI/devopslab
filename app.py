@@ -33,7 +33,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def home():
-    return "Welcome to the  updated  New Flask Application! Go to /register to register."
+    return "Welcome to the  updated  New Flask Application! for second time Go to /register to register."
 
 
 
