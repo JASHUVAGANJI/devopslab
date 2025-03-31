@@ -33,7 +33,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def home():
-    return "Welcome to the  updated  New Flask Application! for second time Go to /register to register."
+    return "Welcome to the  updated  New Flask Application! for third time Go to /register to register."
 
 
 
@@ -48,4 +48,4 @@ def register():
     return render_template('v2.html')  # Show registration form for GET request
 
 if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=5000, debug=True)
+    app.run( debug=True)
